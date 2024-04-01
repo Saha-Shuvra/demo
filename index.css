@@ -1,0 +1,425 @@
+/* common codes starts here */
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   text-decoration: none;
+   outline: none;
+   font-weight: 400;
+}
+
+html {
+   background-color: #fafafafa;
+   scroll-behavior: smooth;
+   font-size: 70%;
+   font-family: "Roboto", sans-serif;
+
+}
+
+body {
+   background-color: #fff;
+   width: 100vh;
+   max-width: 100%;
+   margin: auto;
+   box-shadow: .1rem .1rem .1rem #c4c4c4, -.1rem 0rem .1rem;
+}
+
+.bnt{
+   background-color: rgb(250, 74, 109);
+   border: none;
+   padding: .4rem;
+   border-radius: 2rem;
+   cursor: pointer;
+   font-size: 1.6rem;
+
+}
+
+.section-center{
+   display: flex;
+   flex-direction: column;
+   /* justify-content: space-evenly; */
+   align-items: center;
+}
+
+#section-heading{
+      
+   font-size: 4rem;
+   margin: 1rem;
+   background-color: beige;
+   padding: 1rem;
+   border-radius: 1rem;
+
+}
+img{
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+
+/* common codes ends her */
+
+/* responsiveness start here */
+
+
+/* responsiveness end here */
+
+
+/* hrader codes starts here  */
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: aquamarine;
+   padding: 2rem 1rem;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   min-width: 5vh;
+   
+
+}
+#menu__icon{
+   display: none;
+}
+
+
+.logo-figure {
+   border: 3px solid black;
+  font-size: 3rem;
+}
+
+.logo {
+   font-size: 1rem;
+}
+
+nav ul {
+   display: flex;
+   gap: 2rem;
+}
+
+.nav-link {
+   transition-duration: .6s;
+   transition-property: all;
+   transition-timing-function: linear;
+   font-size: large;
+   color: black;
+   cursor: pointer;
+   display: inline-block;
+}
+
+.nav-link:hover {
+   background-color: blanchedalmond;
+   color: red;
+   border-radius: 1rem;
+   transform: scale(1.2);
+}
+
+/* hrader codes end here  */
+
+
+/* bolg banner section start here  */
+.banner{
+background-color: rgb(196, 204, 255);
+display: flex;
+justify-content: space-between;
+padding: 2rem 1rem;
+font-size: larger;
+
+}
+.banner-hading{
+   text-align: center;
+   gap: 2rem;
+   font-size: x-large;
+   padding: 2rem;
+   background-color: rgb(8, 74, 87);
+   color: #c4c4c4;
+   display: inline-block;
+   border-radius: 4rem 0rem;
+} 
+
+.banner-desripation{
+   padding: 2rem 1rem;
+   justify-content: center;
+   text-align: center;
+}
+.banner-img{
+   text-align: center;
+   height: 328px;
+   
+
+}
+.banner article{
+flex-basis: 50%;
+text-align: center;
+justify-content: center;
+margin: 1rem;
+}
+.banner aside{
+   flex-basis: 50%;
+   margin: 1rem;
+}
+
+/* bolg banner section end here  */
+
+/* about section start here  */
+
+
+
+
+.cards{ 
+   display:flex;
+   gap: 1rem;
+   text-align: center;
+}
+
+.card{
+   flex: 1;
+   background-color: aquamarine;
+   color: rgb(12, 2, 114);
+   border-radius: .8rem;
+   padding: 2rem 1rem;
+   margin: 2rem;
+   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 1rem;
+   gap: .6rem;
+   
+}
+
+.card-header{
+   font-size: 2rem;
+}
+.card-description{
+   padding: .4rem;
+   font-size: 1.4rem;
+   margin-bottom: 1rem;
+}
+
+.card-bnt{
+   width: 80%;
+  
+}
+/* about section end here  */
+/*archieves start here */
+
+.archieves-container{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+gap: 2rem;
+padding: 2rem;
+border-top:.2rem solid ;
+border-bottom:.2rem solid ;
+}
+
+.archieves__img{
+   width: 100%;
+   height: 100%;
+   border-radius: .6rem;
+
+}
+
+.archieves__lists{
+   display: flex ;
+   text-align: center;
+   gap: 3rem;
+   transition-duration: .6s;
+}
+
+.archieves__img:hover{
+   transform: scale(1.2);
+}
+
+
+/* bolg post  section start here  */
+
+.bolg-post{
+   display: flex;
+   width: 70%;
+   transition:all .3s linear ;
+   margin: 2rem 0rem;
+
+
+}
+.bolg-post:hover{
+   transform: scale(1.1);
+}
+
+.bolg-post__heading{
+   /* margin-bottom: 2rem; */
+   font-size: 2rem;
+
+}
+
+.bolg-post__aside{
+flex: 1;
+}
+.bolg-post__containar{
+flex: 2;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+padding: 0rem 1.6rem;
+margin-left: 2rem;
+gap: .6rem;
+}
+.bolg-post__bnt{
+   width: 45%;
+}
+.bolg-post__sub-heading{
+   font-size: 1.5rem;
+}
+.bolg-post__desciption{
+   font-size: 1.2rem;
+}
+/* post blog end here */
+
+#contact-section{
+   background-color:rgb(186, 206, 244);
+   min-height: 40vh;
+}
+.from-control{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 1.6rem;
+}
+.from-control label{
+   font-size: 1.5rem;
+   flex: .3;
+}
+.from-control input,textarea{
+width: 40%;
+flex: .7;
+border: none;
+border-radius: .6rem;
+}
+textarea{
+   resize: none;
+   height: 10vh;
+}
+.form-bnt__field{
+   display: flex;
+   justify-content: flex-end;
+}
+ .content-bnt{
+   width: 30%;
+ }
+ form{
+   border:.1rem solid wheat;
+   padding: 1rem;
+ }
+
+ /* footer section start here */
+
+.footer-section{
+   background-color:aquamarine ;
+   min-height: 5vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2rem;
+}
+.copy-taxt{
+   font-size: 1.2rem;
+}
+.footer-icon{
+   font-size: 2rem;
+}
+.footer_nav{
+   display: flex;
+   gap: 1.6rem;
+}
+
+
+
+
+  /* footer section end here */
+  @media screen and (max-width:992px) {}
+
+@media screen and (max-width:765px) {
+   html {
+      font-size: 55%;
+
+   }
+   .banner{
+      flex-direction: column;
+   }
+
+.banner article{
+   
+   width: 80%;
+   font-size: large;
+}
+.banner-img{
+   text-align: center;
+}
+
+.cards{
+   flex-direction: column;
+  
+   
+}
+#archieves{
+   min-height: auto;
+   
+}
+.bolg-post{
+   width: 80%;
+   flex-direction: column;
+}
+#contact-section{
+   min-height: auto;
+}
+}
+
+@media screen and (max-width:660px) {
+
+
+   header {
+      flex-direction: column;
+
+   }
+
+   .logo-figure{
+      margin-bottom: 1rem;
+   }
+
+
+   nav ul {
+
+      flex-direction: column;
+      align-items: center;
+   }
+
+   html {
+      font-size: 48%;
+   }
+   .archieves__lists{
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 80%;
+   }
+   .bolg-post{
+      width: 90%;
+      
+   }
+   .from-control{
+      flex-direction: column;
+   }
+   .from-control input,textarea{
+      margin-top: .6rem;
+   }
+   .hidden{
+      display: none;
+   }
+   #menu__icon{
+      display: block;
+    
+      margin: 1rem 0rem;
+      
+   }
+}
